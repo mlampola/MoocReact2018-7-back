@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI1YmY2ZmRiNTZiYWI0NDJiNTQ3Mzk5NTUiLCJpYXQiOjE1NDI5OTc0Mzl9.uX-sm9Wkb62SSj88bABtMUmt3te9ZcLCMYtUnrFL-PM
+
+{
+  "title": "Tilintarkastus eilen, tänään ja huomenna",
+  "author": "P.K.",
+  "url": "http://google.fi",
+  "likes": 0
+}

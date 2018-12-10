@@ -1,0 +1,9 @@
+PUT http://localhost:3003/api/blogs/5bf55d937748b190ac4b987b
+content-type: application/json
+
+{
+  "title": "Menetyksen salaisuus",
+  "author": "R. Ankka",
+  "url": "http://roope.com",
+  "likes": 1
+}

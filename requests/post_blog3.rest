@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sYW1wb2xhIiwiaWQiOiI1YmY4NGIxNzExM2I2ZTU4ODhlZDE1NTQiLCJpYXQiOjE1NDI5OTg5MzF9.oSAI-o3gbuWxEFJp39RgiJbjd5oCcoZGmeE30YVJpO0
+
+{
+  "title": "Menetyksen salaisuus",
+  "author": "R. Ankka",
+  "url": "http://roope.com",
+  "likes": 0
+}
