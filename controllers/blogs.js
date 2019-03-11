@@ -100,4 +100,8 @@ blogsRouter.put('/:id', async (request, response) => {
   }
 })
 
+app.get('*', function(req, res) {
+  res.sendFile('index.html')
+})
+
 module.exports = blogsRouter
