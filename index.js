@@ -13,12 +13,18 @@ const middleware = require('./utils/middleware')
 app.use(cors())
 app.use(bodyParser.json())
 
+const stripPassword = (mongoUrl) => {
+  const partsA = mongoUrl.split('@')
+  const partsB = partsA[0].split(':')
+  return partsB[0] + ':' + partsB[1] + '@' + partsA[1]
+}
+
 mongoose
   .connect(config.mongoUrl, { useNewUrlParser: true })
-  .then( () => {
-    console.log('connected to database', config.mongoUrl)
+  .then(() => {
+    console.log('Connected to database', stripPassword(config.mongoUrl))
   })
-  .catch( err => {
+  .catch(err => {
     console.log(err)
   })
 
